@@ -1,0 +1,149 @@
+<!-- 
+    Name: Piyush Maharjan
+    Student No.: 8900512
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="container">   
+                <div id="logo">
+                    <a href="index.html">
+                        <h2>GamerZone</h2>
+                    </a>
+                </div>    
+
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a> </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>                      
+            </nav>
+        </div>
+        
+        <div class="banner container">
+            <h1>Contact</h1>
+            <p>
+                GamerZone is more than ready to reach out to you. 
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Contact Us</h2>
+            <p class="center">Please fill out the form below with your details to stay connected. Check the boxes for topics you're interested in, 
+                like games or consoles. Click "Join List" to submit and connect with us. Thank you! 
+            </p>
+
+            <div id="form">
+                <form id="email_form" name="email_form" action="subscribed.html" method="get"> 
+                    <div>
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" name="full_name">
+                        <span>*</span>
+                    </div>
+
+                    <div>
+                        <label for="email_1">Email Address:</label>
+                        <input type="text" id="email_1" name="email_1">
+                        <span>*</span>
+                    </div>
+                    
+                    <div>
+                        <label for="email_2">Confirm Email Address:</label>
+                        <input type="text" id="email_2" name="email_2">
+                        <span>*</span>
+                    </div>
+                                
+                    <div>
+                        <label for="state">State Code:</label>
+                        <input type="text" id="state" name="state">
+                        <span>*</span>
+                    </div>
+                                            
+                    <div>
+                        <label for="zip_code">Zip Code:</label>
+                        <input type="text" id="zip_code" name="zip_code">
+                        <span>*</span>
+                    </div>
+
+                    <div>
+                        <label for="date">Start Date:</label>
+                        <input type="text" id="date" name="date">
+                        <span>*</span>
+                    </div>
+                    
+                    <div>
+                        <label>Email me about:</label>
+                        <input type="checkbox" name="games" id="games" value="games">Games
+                        <input type="checkbox" name="consoles" id="consoles" value="consoles">Consoles
+                        <input type="checkbox" name="accessories" id="accessories" value="accessories">Accessories
+                        <input type="checkbox" name="pc" id="pc" value="pc">PC
+                        <span>*</span>
+                    </div>
+                    <div>
+                        <label></label>
+                        <input type="submit" id="subscribe" name="subscribe" value="Subscribe">
+                        <input type="reset" id="reset" name="reset" value="Reset">
+                    </div>
+        
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Swap your setup</h2>
+            <p class="center">
+                Now in just a click of a button you can swap your setup. Click below to check your luck. Good Luck!
+            </p>
+
+            <div id="imageSwap">
+                <div id="swapImages">
+                    <img id="swapImage1" src="img/swap1.jpg" alt="Gaming Setup 1">
+                    <img id="swapImage2" src="img/swap2.jpg" alt="Gaming Setup 2">
+                </div>
+                
+                <button class="swapButton" id="swap"">Swap Setup</button>
+                <button class="swapButton" id="luck"">Luck Check</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>GamerZone</h2>
+            <p>
+                At GamerZone, we're more than a gaming company, we're a dedicated team of enthusiasts crafting unforgettable experiences. 
+            </p>
+            <small>Follow Us On</small>
+            <div class="social-media">
+                <img src="img/svg/facebook-svgrepo-com.svg" class="icons" alt="facebook">
+                <img src="img/svg/instagram-1-svgrepo-com.svg" class="icons" alt="instagram">
+                <img src="img/svg/twitter-color-svgrepo-com.svg" class="icons" alt="twitter">
+                <img src="img/svg/snapchat-svgrepo-com.svg" class="icons" alt="snapchat">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p id="copyright">Copyright &copy; 2024. GamerZone. Piyush Maharjan</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

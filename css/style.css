@@ -1,0 +1,440 @@
+/* 
+*****************************
+    Name: Piyush Maharjan
+    Student No.: 8900512
+*****************************
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.section {
+    padding: 10px 0 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #540678;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Style Script", cursive;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+.center {
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#logo h2 {
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0 0;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 7px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar nav ul {
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 25px;
+}
+
+.navbar nav ul li a {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar nav ul li a:hover {
+    color: #540678;
+}
+
+/* BANNER CONTENT */
+.banner {
+    color: #fff;
+    padding-top: 110px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.banner p {
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    margin-top: 70px;
+    padding: 20px 0 0;
+}
+
+.footer-content {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    margin: 0 auto;
+    width: 50%;
+    line-height: 1.6;
+    color: #aaa;
+    padding-bottom: 30px;
+}
+
+.footer-content small {
+    color: #fff;
+}
+
+.footer-content .icons {
+    height: 20px;
+    padding: 10px 5px 0px;
+    cursor: pointer;
+}
+
+footer #copyright {
+    border-top: 1px solid #333;
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/******************************************
+ MAIN CONTENT 
+******************************************/
+
+/* Slider */
+#featured_game {
+    position: relative;
+}
+
+#slider_display {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+#slider_images {
+    position: relative;
+    list-style: none;
+    padding: 10px 0 0;
+    display: flex;
+}
+
+#slider_images li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 5px;
+}
+
+#slider_images li img {
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#button_left {
+    left: 10px;
+}
+
+#button_right {
+    right: 10px;
+}
+
+/* Hover Zoom */
+#product_list {
+    margin: 0 auto;
+    width: 70%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#product_list li {
+    padding: 0 5px;
+}
+
+#product_list li img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#product_list li a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+#best_selling p {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+#title {
+    margin-top: 20px;
+}
+
+#image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-top: 0;
+}
+
+/* Slide Show */
+#slideshow {
+    margin-top: 30px;
+}
+
+#slideshow #content {
+    display: flex;
+}
+
+#slideshow img {
+    padding-left: 50px;
+    padding-top: 30px;
+    height: 300px;
+}
+
+#slideshow_images img {
+    display: none;
+}
+
+/* Accordions */
+#accordion .accordion_box div {
+    display: none;
+}
+
+#accordion .accordion_box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 10px 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+#accordion h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: .25em 0 .25em 40px;
+    margin: 0;
+    background: url('../img/svg/up.svg') no-repeat left center;
+}
+
+#accordion h4.down {
+    background: url('../img/svg/down.svg') no-repeat left center;
+}
+
+/* Price Calculator */
+#calculator_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#calculator_section img {
+    width: 350px;
+    margin-right: 30px;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+#calculator div {
+    margin-bottom: 15px;
+}
+
+#calculator label {
+    font-weight: bold;
+}
+
+#calculator select,
+#calculator input[type="number"],
+#calculator input[type="text"] {
+    width: 160px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+#calculator input[type="button"] {
+    padding: 7px 21px;
+    background-color: #540678;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#calculator input[type="button"]:hover {
+    background-color: #29033a;
+}
+
+/* Contact Form */
+#form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#email_form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 25px 30px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#email_form div {
+    margin-bottom: 20px;
+}
+
+#email_form label {
+    display: inline-block;
+    font-weight: bold;
+}
+
+#email_form select,
+#email_form input[type="number"],
+#email_form input[type="text"] {
+    width: 300px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+#email_form input[type="submit"],
+#email_form input[type="reset"] {
+    padding: 7px 21px;
+    background-color: #540678;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#email_form input[type="button"]:hover {
+    background-color: #29033a;
+}
+
+#email_form span {
+    font-style: italic;
+    color: rgb(167, 0, 0);
+}
+
+/* Image Swap */
+#swapImages {
+    display: flex;
+    justify-content: center;
+}
+
+#swapImages img {
+    height: 280px;
+    margin: 0 10px;
+}
+
+#swapImages img:nth-child(2) {
+    border: 5px solid gold;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(209, 244, 7, 1);
+}
+
+#imageSwap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imageSwap .swapButton {
+    width: 200px;
+    margin-top: 12px;
+    padding: 7px 21px;
+    background-color: #540678;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#imageSwap .swapButton:hover {
+    background-color: #29033a;
+}
